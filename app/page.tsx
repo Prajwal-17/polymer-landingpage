@@ -1,95 +1,48 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="h-screen w-screen border-2 py-4">
+      {/* <div>this is the landing page hire</div> */}
+      <div className="mx-3 rounded-2xl bg-pink-200 p-2">
+        <div className="">
+          <nav className="flex items-center justify-between bg-red-500">
+            <div className="flex">
+              {/* <Image src="" width={10} height={10} alt="" /> */}
+              <div className="h-10 w-10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="32"
+                  viewBox="0 0 25 32"
+                  fill="none"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M7.5528 4.87425C8.87502 4.03898 10.4417 3.55557 12.1213 3.55557C16.852 3.55557 20.687 7.39056 20.687 12.1213C20.687 16.2424 17.7766 19.6838 13.899 20.5022V11.7979C13.899 8.16308 11.1084 5.17999 7.5528 4.87425ZM3.55557 12.1192C3.55564 11.8271 3.57033 11.5385 3.59894 11.2539C3.85927 9.63811 5.26028 8.404 6.94952 8.404C8.82395 8.404 10.3435 9.92352 10.3435 11.7979V20.5022C6.46658 19.6839 3.55653 16.2435 3.55557 12.1233C3.55557 12.1226 3.55557 12.1219 3.55557 12.1213C3.55557 12.1206 3.55557 12.1199 3.55557 12.1192ZM0.0713783 10.7982C0.0243429 11.1247 0 11.4585 0 11.7979V12.1213V25.0505C0 28.8886 3.11141 32.0001 6.94952 32.0001C10.7876 32.0001 13.899 28.8886 13.899 25.0505V24.1131C19.7506 23.253 24.2425 18.2117 24.2425 12.1213C24.2425 5.42687 18.8157 0 12.1213 0C5.87396 0 0.730531 4.7262 0.0713783 10.7982ZM10.3435 24.1131V25.0505C10.3435 26.925 8.82395 28.4445 6.94952 28.4445C5.0751 28.4445 3.55557 26.925 3.55557 25.0505V20.6976C5.35265 22.4925 7.71041 23.7261 10.3435 24.1131Z"
+                  ></path>
+                </svg>
+              </div>
+              <span>Polymer</span>
+            </div>
+            <ul className="text-s flex items-center justify-between gap-3 text-sm">
+              <li>Features</li>
+              <li>Pricing</li>
+              <li>Blog</li>
+              <li>Changelog</li>
+            </ul>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+            <div>
+              <button>Log In</button>
+              <button>Sign up</button>
+            </div>
+          </nav>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div> hero section</div>
+      </div>
+      <div>hero image </div>
+      <div>second hero div </div>
     </div>
   );
 }
