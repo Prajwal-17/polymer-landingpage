@@ -3,13 +3,13 @@ import Image from "next/image";
 export const ChatComponent = () => {
   return (
     <>
-      <div className="flex items-start justify-between gap-x-20 gap-y-10 px-40 py-24">
-        <div className="shadow-lg">
+      <div className="flex h-full w-full items-start justify-between gap-x-20 gap-y-10 px-40 py-20">
+        <div className="rounded-xl shadow-lg">
           <Image
             src="/chatfeature.webp"
             alt="chat image"
-            height={900}
-            width={1100}
+            height={800}
+            width={1000}
             className="rounded-xl"
           />
         </div>
