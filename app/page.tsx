@@ -1,12 +1,15 @@
+import { HiringSteps } from "@/components/HiringSteps";
 import { ChatComponent } from "@/components/ChatComponent";
 import { CompaniesComponent } from "@/components/CompaniesComponent";
 import { Navbar } from "@/components/Navbar";
 import { ProductInfo } from "@/components/ProductInfo";
 import { SettingComponent } from "@/components/SettingComponent";
+import { SignUpCard } from "@/components/SignUpCard";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="h-[100vh] w-full px-3 py-4">
+    <div className="h-auto w-full px-3 py-4">
       <section className="h-[110vh] w-full rounded-xl bg-pink-200 px-28">
         <div className="mx-16 flex items-center justify-center pt-8">
           <Navbar />
@@ -48,8 +51,16 @@ export default function Home() {
         <SettingComponent />
       </section>
 
-      <section className="mt-5 min-h-screen w-full rounded-xl bg-[#F4F4F4]">
-        <SettingComponent />
+      <section className="mt-5 h-[570px] w-full rounded-xl bg-pink-200">
+        <HiringSteps />
+      </section>
+
+      <section className="mt-5 grid h-[150px] w-full place-items-center rounded-xl bg-[#F4F4F4]">
+        <SignUpCard />
+      </section>
+
+      <section className="mt-5 h-[590px] w-full rounded-xl bg-black text-white">
+        <Footer />
       </section>
     </div>
   );
