@@ -5,7 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { ProductInfo } from "@/components/ProductInfo";
 import { SettingComponent } from "@/components/SettingComponent";
 import { SignUpCard } from "@/components/SignUpCard";
-import { Footer } from "@/components/Footer";
+import { FooterCard } from "@/components/FooterCard";
 
 export default function Home() {
   return (
@@ -59,8 +59,8 @@ export default function Home() {
         <SignUpCard />
       </section>
 
-      <section className="mt-5 h-[590px] w-full rounded-xl bg-black text-white">
-        <Footer />
+      <section className="mt-5 h-[530px] w-full rounded-xl bg-black text-white">
+        <FooterCard />
       </section>
     </div>
   );
